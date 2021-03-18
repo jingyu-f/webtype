@@ -422,16 +422,15 @@ a:visited{
   color: #0C354D;
 }
 
-.q{
-    position: absolute;
-    height:200px;
-    top: 500px;
-    right: 150px;
-  }
-
 .l{
       position: absolute;
       height:100px;
-      top: 800px;
+      top: 500px;
       right: 150px;
+  }
+.q{
+    position: absolute;
+    height:200px;
+    top: 800px;
+    right: 150px;
   }

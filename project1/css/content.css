@@ -424,7 +424,14 @@ a:visited{
 
 .q{
     position: absolute;
-    height:200px;
-    top: 600px;
+    height:500px;
+    top: 500px;
     right: 150px;
   }
+  
+.l{
+  position: absolute;
+  height:500px;
+  top: 800px;
+  right: 150px;
+}

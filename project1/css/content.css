@@ -424,13 +424,13 @@ a:visited{
 
 .l{
       position: absolute;
-      width:500px;
+      width:200px;
       top: 500px;
       right: 150px;
   }
 .q{
     position: absolute;
-    width:500px;
+    width:200px;
     top: 900px;
     right: 150px;
   }

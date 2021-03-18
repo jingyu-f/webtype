@@ -81,3 +81,7 @@ h4{
   background-attachment:fixed;
 
 }
+.expand{
+  width: 100%;
+  z-index: 0;
+}

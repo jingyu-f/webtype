@@ -430,8 +430,8 @@ a:visited{
   }
 
 .l{
-  position: absolute;
-  height:200px;
-  top: 800px;
-  right: 150px;
-}
+      position: absolute;
+      height:100px;
+      top: 800px;
+      right: 150px;
+  }

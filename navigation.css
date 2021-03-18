@@ -48,20 +48,16 @@ h1{
   font-weight: normal;
 }
 h2{
-  position:absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
+  position:relative;
+
+  text-align: center;
   color: yellow;
   font-family: 'changsongjian';
   font-size:60pt;
   font-weight: normal;
 }
 h3{
-  position:absolute;
-  left: 50%;
-  top: 70%;
-  transform: translate(-50%,-50%);
+  position:relative;
   text-align: center;
   color: yellow;
   font-family: 'cirkaregular';

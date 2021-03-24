@@ -10,7 +10,7 @@ Statement 3 increases a value (i++) each time the code block in the loop has bee
 let t = 0
 function animate(){
   let points = xs.map(x => {
-    let y =  60+ 18 * Math.sin((x + t) / 23)
+    let y =  20+ 18 * Math.sin((x + t) / 23)
     return [x, y]
   })
   let path ="M" + points.map(p => {

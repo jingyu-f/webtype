@@ -1,12 +1,26 @@
-html{
+body{
+  margin:0pt;
+}
+
+body#page1{
     height: 100vh;
     width: 100%;
     background: linear-gradient(0deg, rgba(51,100,130,1) 8%, rgba(255,255,188,0.7) 90%);
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment:fixed;
+    background-attachment: fixed;
+
 }
 
+body#page2{
+    height: 1500px;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(51,100,130,1) 20%, rgba(255,255,188,0.7) 80%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+
+}
 
 @font-face {
     font-family: 'cirkaregular';
@@ -51,7 +65,7 @@ p{
 
 }
 h1{
-  position:static;
+  position:fixed;
   left: 50%;
   top: 15%;
   transform: translate(-50%,-50%);
@@ -130,6 +144,7 @@ body{
   overflow-x:hidden;
   width:100%;
 }
+/*
 svg{
   position:absolute;
   width: 100%;
@@ -142,20 +157,26 @@ svg{
   stroke-width:1.4px;
   stroke-linecap: round;
   fill: none;
-  display:none;
+  display:block;
 }
-
+*/
 
 .one {
 color: #0C354D;
 }
 
+.one:hover{
+  text-shadow: 0px 0px 0px #0C354D;
+  text-decoration-line: underline;
+  text-decoration-style:wavy;
+  text-decoration-thickness:0.15em;
+  text-underline-offset: 0.7em;
+}
 
 .one h3{
 position:relative;
 color: #0C354D;
 width: 100%;
-height: 10px;
 line-height: 50px;
 text-align: center;
 /*starting position*/
@@ -188,9 +209,8 @@ transform: translateX(-40%);
 }
 }
 .two {
-height: 100%;
+height: 50px;
 position: relative;
-padding-top: 20px;
 color: transparent;
 text-shadow: 0px 0px 1px #0C354D;
 transition: text-shadow 0.1s linear;
@@ -198,6 +218,10 @@ transition: text-shadow 0.1s linear;
 
 .two:hover{
   text-shadow: 0px 0px 0px #0C354D;
+  text-decoration-line: underline;
+  text-decoration-style:wavy;
+  text-decoration-thickness:0.15em;
+  text-underline-offset: 0.7em;
 }
 
 .two h3{
@@ -238,9 +262,10 @@ transform: translateX(20%);
 }
 
 .three {
-height: 50px;
+height: 60px;
+position: relative;
 overflow:visible;
-padding-top: 25px;
+padding-top: 20px;
 color: transparent;
 text-shadow: 0px 0px 3px #0C354D;
 transition: text-shadow 0.1s linear;
@@ -250,9 +275,11 @@ transition: text-shadow 0.1s linear;
   text-shadow: 0px 0px 0px #0C354D;
   text-decoration-line: underline;
   text-decoration-style:wavy;
+  text-decoration-thickness:0.15em;
+  text-underline-offset: 0.7em;
 }
 .three h3{
-position: absolute;
+position: relative;
 width: 100%;
 height: 100%;
 margin: 0;
@@ -291,13 +318,14 @@ transform: translateX(-50%);
 height: 60px;
 overflow: hidden;
 position: relative;
-padding-top: 30px;
+padding-top: 20px;
 color: transparent;
 text-shadow: 0px 0px 6.5px #0C354D;
 transition: text-shadow 0.1s linear;
 }
 .four:hover{
   text-shadow: 0px 0px 0px #0C354D;
+
 }
 
 .four h3{
@@ -341,7 +369,7 @@ transform: translateX(-50%);
 height: 60px;
 overflow:visible;
 position: relative;
-padding-top: 25px;
+padding-top: 20px;
 color: transparent;
 text-shadow: 0px 0px 8px #0C354D;
 transition: text-shadow 0.1s linear;
@@ -392,7 +420,7 @@ transform: translateX(50%);
 height: 60px;
 overflow: hidden;
 position: relative;
-padding-top: 30px;
+padding-top: 20px;
 color: transparent;
 text-shadow: 0px 0px 9px #0C354D;
 transition: text-shadow 0.1s linear;
@@ -469,11 +497,27 @@ a.visited{
 }
 
 
-.l{
-      position: absolute;
-      width:200px;
-      top: 500px;
-      right: 150px;
+
+.fig1{
+        position:absolute;
+        left: 700px;
+        top:500px;
+        margin: 20px;
+    }
+
+.fig2{
+        position:absolute;
+        left: 700px;
+        top:800px;
+        margin: 20px;
+        }
+
+figcaption{
+    font-family: 'cirkaregular';
+    font-size: 13pt;
+    caption-side: bottom;
+    color:#0C354D;
+
   }
 .q{
     position: absolute;

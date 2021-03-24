@@ -132,9 +132,11 @@ svg{
   height: 1000pt;
 }
 
-path{
+
+.line1{
   stroke: #0C354D;
   stroke-width:1.4px;
+  opacity:0;
   stroke-linecap: round;
   fill: none;
 }

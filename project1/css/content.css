@@ -40,8 +40,8 @@ nav {
   background-color: pink;
   font-family: 'cirkaregular';
 }
-p{
 
+p{
   left:50%;
   top: 65%;
   transform: translate(-50%, -50%);
@@ -76,7 +76,7 @@ h3{
   text-align: left;
   padding-left: 50px;
   font-family: 'cirkaregular';
-  font-size:53pt;
+  font-size:55pt;
   font-weight: normal;
 }
 
@@ -152,11 +152,11 @@ color: #0C354D;
 
 
 .one h3{
-position:static;
+position:relative;
 width: 100%;
 height: 100%;
 margin: 0;
-line-height: 20px;
+line-height: 50px;
 text-align: center;
 /*starting position*/
 -moz-transform:translateX(50%);

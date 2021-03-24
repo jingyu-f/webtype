@@ -41,13 +41,14 @@ nav {
   font-family: 'cirkaregular';
 }
 p{
-  color:yellow;
+
   left:50%;
   top: 65%;
   transform: translate(-50%, -50%);
   position:fixed;
   font-family: 'cirkaregular';
   font-size: 55pt;
+
 }
 h1{
   position:fixed;
@@ -75,9 +76,8 @@ h3{
   position:static;
   text-align: left;
   padding-left: 50px;
-  color: #0C354D;
   font-family: 'cirkaregular';
-  font-size:43pt;
+  font-size:53pt;
   font-weight: normal;
 }
 
@@ -126,9 +126,13 @@ h4{
 
 }
 */
+body{
+  overflow-x:hidden;
+  width:100%;
+}
 svg{
   position:absolute;
-  width: 99%;
+  width: 100%;
   height: 1000pt;
 }
 
@@ -136,17 +140,21 @@ svg{
 .line1{
   stroke: #0C354D;
   stroke-width:1.4px;
-  opacity:0;
   stroke-linecap: round;
   fill: none;
+  display:none;
 }
 
+
 .one {
-height: 50px;
+height: 60px;
 overflow:visible;
 position: relative;
 padding-top: 30px;
+color: #0C354D;
 }
+
+
 .one h3{
 position: absolute;
 width: 100%;
@@ -184,11 +192,19 @@ transform: translateX(-40%);
 }
 }
 .two {
-height: 50px;
+height: 60px;
 overflow: hidden;
 position: relative;
 padding-top: 30px;
+color: transparent;
+text-shadow: 0px 0px 2px #0C354D;
+transition: text-shadow 0.1s linear;
 }
+
+.two:hover{
+  text-shadow: 0px 0px 0px #0C354D;
+}
+
 .two h3{
 position: absolute;
 width: 100%;
@@ -225,11 +241,19 @@ transform: translateX(-20%);
 transform: translateX(20%);
 }
 }
+
 .three {
 height: 50px;
 overflow:visible;
 position: relative;
 padding-top: 25px;
+color: transparent;
+text-shadow: 0px 0px 3px #0C354D;
+transition: text-shadow 0.1s linear;
+}
+
+.three:hover{
+  text-shadow: 0px 0px 0px #0C354D;
 }
 .three h3{
 position: absolute;
@@ -268,11 +292,18 @@ transform: translateX(-50%);
 }
 }
 .four {
-height: 50px;
+height: 60px;
 overflow: hidden;
 position: relative;
 padding-top: 30px;
+color: transparent;
+text-shadow: 0px 0px 6.5px #0C354D;
+transition: text-shadow 0.1s linear;
 }
+.four:hover{
+  text-shadow: 0px 0px 0px #0C354D;
+}
+
 .four h3{
 position: absolute;
 width: 100%;
@@ -311,11 +342,19 @@ transform: translateX(-50%);
 }
 
 .five {
-height: 50px;
+height: 60px;
 overflow:visible;
 position: relative;
 padding-top: 25px;
+color: transparent;
+text-shadow: 0px 0px 8px #0C354D;
+transition: text-shadow 0.1s linear;
 }
+
+.five:hover{
+  text-shadow: 0px 0px 0px #0C354D;
+}
+
 .five h3{
 position: absolute;
 width: 100%;
@@ -354,10 +393,16 @@ transform: translateX(50%);
 }
 }
 .six {
-height: 50px;
+height: 60px;
 overflow: hidden;
 position: relative;
 padding-top: 30px;
+color: transparent;
+text-shadow: 0px 0px 9px #0C354D;
+transition: text-shadow 0.1s linear;
+}
+.six:hover{
+  text-shadow: 0px 0px 0px #0C354D;
 }
 .six h3{
 position: absolute;

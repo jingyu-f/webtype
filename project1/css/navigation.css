@@ -48,6 +48,7 @@ h1{
   font-family: 'AppleMyungjo';
   font-size:60pt;
   font-weight: normal;
+  z-index: 100;
 }
 h2{
   position:absolute;
@@ -88,9 +89,9 @@ h4{
 
 .expand{
   width: 100%;
-  z-index: 0;
   height: 300px;
   object-fit: none;
+  position:relative;
 }
 
 .Video {

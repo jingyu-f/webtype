@@ -55,7 +55,7 @@ body#page4{
 body#page5{
     height: 3300px;
     width: 100%;
-    background: linear-gradient(0deg, rgba(51,100,130,1) 90%, rgba(255,255,188,0.7) );
+    background: linear-gradient(0deg, rgba(51,100,130,1) 96%, rgba(255,255,188,0.7) );
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment:scroll;

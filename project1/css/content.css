@@ -5,7 +5,7 @@ body{
 body#page0{
     height: 1100px;
     width: 100%;
-    background: linear-gradient(0deg, rgba(51,100,130,1) 50%, rgba(255,255,188,0.8));
+    background: linear-gradient(0deg, rgba(51,100,130,1) 50%, rgba(255,255,188,0.75));
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -43,14 +43,25 @@ body#page3{
 }
 
 body#page4{
-    height: 2400px;
+    height: 2900px;
     width: 100%;
-    background: linear-gradient(0deg, rgba(51,100,130,1) 87%, rgba(255,255,188,0.7) );
+    background: linear-gradient(0deg, rgba(51,100,130,1) 90%, rgba(255,255,188,0.7) );
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment:scroll;
 
 }
+
+body#page5{
+    height: 3200px;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(51,100,130,1) 90%, rgba(255,255,188,0.7) );
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+
+}
+
 @font-face {
     font-family: 'cirkaregular';
     src: url('../fonts/Cirka-Regular.ttf') format('truetype');
@@ -135,42 +146,7 @@ h4{
   font-weight: normal;
 }
 
-/*.loader
-{
-  width: 500px;
-  height: 200px;
-  overflow: hidden;
-  background: transparent;
-}
-.loader:before
-{
-  content: attr(data-text);
-  position: relative;
-  color: transparent;
-  width: calc(100% + 27px);
-  font-size:129pt;
-  text-decoration-style: wavy;
-  text-decoration-color: #607d86;
-  text-decoration-line: underline;
-  animation: animate 1.5s linear infinite;
-}
-@keyframes animate
-{
-  0%
-  {
-    left: -3px;
-  }
-  100%
-  {
-    left: -30px;
-  }
-}
 
-.loader{
-  text-decoration-thickness: 8px;
-
-}
-*/
 body{
   overflow-x:hidden;
   width:100%;
@@ -182,13 +158,13 @@ svg{
   height: 200pt;
   position:fixed;
   padding-top: 45pt;
-  opacity: 0.7;
+  opacity: 1;
 }
 
 
 .line1{
   stroke: #0C354D;
-  stroke-width:1px;
+  stroke-width:1.2px;
   stroke-linecap: round;
   fill: none;
   display: block;
@@ -573,6 +549,24 @@ a.visited{
         top:1760px;
         margin: 15px;
                         }
+.fig7{
+        position:absolute;
+        left: 70px;
+        top:1500px;
+        margin: 15px;
+                        }
+.fig8{
+        position:absolute;
+        left: 700px;
+        top:1870px;
+        margin: 15px;
+                        }
+.fig9{
+        position:absolute;
+        left: 130px;
+        top:2400px;
+        margin: 15px;
+                        }
 
 figcaption{
     font-family: 'cirkaregular';
@@ -605,4 +599,8 @@ figcaption{
 .video3{
   display:block;
   margin-left: 800px;
+}
+.video4{
+  display: block;
+  margin-left: 40pt;
 }

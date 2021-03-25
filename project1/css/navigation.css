@@ -27,13 +27,17 @@
 }
 
 nav {
-  background-color: pink;
   font-family: 'cirkaregular';
 }
+
 p{
   color:yellow;
   font-family: 'cirkaregular';
-  font-size: 12pt;
+  font-size: 13pt;
+  position: absolute;
+  font-weight: normal;
+  width:200pt;
+  padding-bottom: 30pt;
 }
 h1{
   position:absolute;
@@ -87,4 +91,22 @@ h4{
   z-index: 0;
   height: 300px;
   object-fit: none;
+}
+
+.Video {
+  position: fixed;
+  min-height: 100%;
+  min-width:100%;
+  right: 0;
+  bottom: 0;
+}
+
+.bottom{
+  width:230px;
+  padding-left: 20pt;
+  padding-top:700pt;
+  padding-bottom: 30pt;
+}
+body{
+  margin:0;
 }

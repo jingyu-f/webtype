@@ -159,6 +159,7 @@ svg{
   position:fixed;
   padding-top: 45pt;
   opacity: 1;
+  z-index: 100;
 }
 
 
@@ -603,4 +604,11 @@ figcaption{
 .video4{
   display: block;
   margin-left: 40pt;
+}
+.Video {
+  position: fixed;
+  min-height: 100%;
+  min-width:100%;
+  right: 0;
+  bottom: 0;
 }

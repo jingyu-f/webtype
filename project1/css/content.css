@@ -53,7 +53,7 @@ body#page4{
 }
 
 body#page5{
-    height: 3200px;
+    height: 3300px;
     width: 100%;
     background: linear-gradient(0deg, rgba(51,100,130,1) 90%, rgba(255,255,188,0.7) );
     background-size: cover;
@@ -611,4 +611,12 @@ figcaption{
   min-width:100%;
   right: 0;
   bottom: 0;
+}
+.bottom_0{
+  display:block;
+  width:230px;
+  padding-left: 70pt;
+  padding-bottom: 30pt;
+  margin-top: 1900pt;
+  z-index: 100;
 }

@@ -2,20 +2,30 @@ body{
   margin:0pt;
 }
 
-body#page1{
-    height: 100vh;
+body#page0{
+    height: 1200px;
     width: 100%;
-    background: linear-gradient(0deg, rgba(51,100,130,1) 8%, rgba(255,255,188,0.7) 90%);
+    background: linear-gradient(0deg, rgba(51,100,130,1) 30%, rgba(255,255,188,0.7) 100%);
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
+
+}
+
+body#page1{
+    height: 1800px;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(51,100,130,1) 9%, rgba(255,255,188,0.7) 91%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
 
 }
 
 body#page2{
-    height: 1500px;
+    height: 2300px;
     width: 100%;
-    background: linear-gradient(0deg, rgba(51,100,130,1) 20%, rgba(255,255,188,0.7) 80%);
+    background: linear-gradient(0deg, rgba(51,100,130,1) 50%, rgba(255,255,188,0.7) );
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment:scroll;
@@ -51,8 +61,10 @@ body#page2{
 }
 
 nav {
-  background-color: pink;
-  font-family: 'cirkaregular';
+  font-family: 'cirkabold';
+  font-size: 30pt;
+  margin: 40pt;
+  color: #0C354D;
 }
 
 p{
@@ -144,11 +156,14 @@ body{
   overflow-x:hidden;
   width:100%;
 }
-/*
+
 svg{
   position:absolute;
   width: 100%;
-  height: 1000pt;
+  height: 800pt;
+  position:fixed;
+  margin-top: 20pt;
+  margin-bottom: 20pt;
 }
 
 
@@ -157,9 +172,10 @@ svg{
   stroke-width:1.4px;
   stroke-linecap: round;
   fill: none;
-  display:block;
+  display: block;
+
 }
-*/
+
 
 .one {
 color: #0C354D;
@@ -465,6 +481,10 @@ transform: translateX(20%);
 }
 }
 
+#wave_ritual{
+  position: fixed;
+}
+
 
 .two{
   padding-top: 53pt;
@@ -512,10 +532,31 @@ a.visited{
         margin: 20px;
         }
 
+.fig3{
+        position:absolute;
+        left: 600px;
+        top:500px;
+        margin: 15px;
+        }
+.fig4{
+        position:absolute;
+        left: 600px;
+        top:1100px;
+        margin: 15px;
+                        }
+.fig5{
+        position:absolute;
+        left: 600px;
+        top:1800px;
+        margin: 15px;
+                                                }
 figcaption{
     font-family: 'cirkaregular';
-    font-size: 13pt;
+    font-size: 11pt;
     caption-side: bottom;
+    display:inline-block;
+    width: 200px;
     color:#0C354D;
+    margin-right: 20px;
 
   }

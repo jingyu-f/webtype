@@ -33,9 +33,19 @@ body#page2{
 }
 
 body#page3{
-    height: 2000px;
+    height: 2100px;
     width: 100%;
     background: linear-gradient(0deg, rgba(51,100,130,1) 75%, rgba(255,255,188,0.7) );
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:scroll;
+
+}
+
+body#page4{
+    height: 2400px;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(51,100,130,1) 87%, rgba(255,255,188,0.7) );
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment:scroll;
@@ -509,6 +519,12 @@ transform: translateX(20%);
   padding-left: 50px;
   overflow: scroll;
 }
+.article3{
+  width: 600px;
+  padding-top: 100px;
+  margin-left: 60pt;
+  overflow: scroll;
+}
 
 a.link{
   #0C354D;
@@ -572,5 +588,21 @@ figcaption{
   #time1{
     text-decoration:underline;
     underline: wavy;
-    
+
   }
+.video1{
+  display:block;
+  margin: auto;
+  margin-top: 60pt;
+  align-items: center;
+}
+.video2{
+  display:block;
+  margin-left: 20pt;
+  margin-top: 70pt;
+}
+
+.video3{
+  display:block;
+  margin-left: 800px;
+}

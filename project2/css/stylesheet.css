@@ -2,14 +2,20 @@
   font-family:'RIPPLE';
   src: url('../fonts/RIPPLE.ttf') format('truetype');
 }
+html{
+  background: center fixed;
+  background-size: cover;
+  background-color: pink;
+}
 
 h1{
   font-family:'RIPPLE';
-  font-variation-settings: 'hght' 900;
+  font-variation-settings: 'hght' 700;
   font-style: normal;
-  font-size: 800px;
-  line-height: 1.7;
-  color: red;
+  font-size: 400px;
+  line-height: 0.5;
+  color: transparent;
+  -webkit-text-stroke: 1px black;
 }
 h2{
   color:red;

@@ -1,12 +1,16 @@
 @font-face{
   font-family:'RIPPLE';
-  src: url('../fonts/RIPPLE.ttf') format('truetype-variations');
+  src: url('../fonts/RIPPLE.ttf') format('truetype');
 }
 
-body{
+h1{
   font-family:'RIPPLE';
-  font-variation-settings: 'hght' 800;
+  font-variation-settings: 'hght' 900;
   font-style: normal;
-  font-size: 130px;
+  font-size: 800px;
   line-height: 1.7;
+  color: red;
+}
+h2{
+  color:red;
 }

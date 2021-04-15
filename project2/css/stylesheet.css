@@ -11,8 +11,22 @@
 .RIPPLE, .RIPPLE *{
   font-variation-settings: 'hght' var(--hght);
 }
+
+html, body { background-color: #f6f7eb; height:100%; margin:0; padding:0 }
+
+#NW { display:block; width:50%;   height:50%;   background:#f2f2f2; float:left; }
+#NE { display:block; width:50%;   height:50%; left:50%; background:#3892f4; float:left;  }
+#SW { display:block; width:50%; height:50%;   background:#4d4d4d; float: left;}
+#SE { display:block; width:50%;  height:50%; left: 50%; background:#daef18; float: left; }
+
+#sliders{
+  position:relative; display: block;
+}
 body{
   font-family:"RIPPLE";
+  position:relative;
+  display:block;
+
 }
 #content0 h1{
   font-family:'RIPPLE';
@@ -24,6 +38,19 @@ body{
   -webkit-text-stroke: 1px black;
   --hght: 600;
 }
+
+#navigation{
+  font-size: 25pt;
+  color: #d8d5a0;
+  line-height: 2;
+  --hght: 100;
+  margin-left: 50px;
+}
+.button
+{
+  display: inline-block;
+  margin-left: 30px;
+}
 #intro{
   font-size: 27vw;
   color: transparent;
@@ -32,6 +59,7 @@ body{
 }
 #content1 h1{
   font-family:'RIPPLE';
+  display:block;
   /*font-variation-settings: 'hght' 200;*/
   font-style: normal;
   font-size: 400px;
@@ -42,10 +70,4 @@ body{
 }
 h2{
   color:red;
-}
-
-html{
-  background: center fixed;
-  background-size: cover;
-  background-color: #f6f7eb;
 }

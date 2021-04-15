@@ -1,22 +1,51 @@
 @font-face{
   font-family:'RIPPLE';
-  src: url('../fonts/RIPPLE.ttf') format('truetype');
-}
-html{
-  background: center fixed;
-  background-size: cover;
-  background-color: pink;
+  src: url('../fonts/RIPPLE.ttf') format('truetype-variations');
 }
 
-h1{
+:root{
+  --hght: 200;
+}
+
+
+.RIPPLE, .RIPPLE *{
+  font-variation-settings: 'hght' var(--hght);
+}
+body{
+  font-family:"RIPPLE";
+}
+#content0 h1{
   font-family:'RIPPLE';
-  font-variation-settings: 'hght' 700;
+  /*font-variation-settings: 'hght' 200;*/
   font-style: normal;
   font-size: 400px;
   line-height: 0.5;
   color: transparent;
   -webkit-text-stroke: 1px black;
+  --hght: 600;
+}
+#intro{
+  font-size: 30vw;
+  color: transparent;
+  -webkit-text-stroke: 1px black;
+  line-height: 2;
+}
+#content1 h1{
+  font-family:'RIPPLE';
+  /*font-variation-settings: 'hght' 200;*/
+  font-style: normal;
+  font-size: 400px;
+  line-height: 0.5;
+  color: transparent;
+  -webkit-text-stroke: 1px black;
+  --hght: 200;
 }
 h2{
   color:red;
+}
+
+html{
+  background: center fixed;
+  background-size: cover;
+  background-color: pink;
 }

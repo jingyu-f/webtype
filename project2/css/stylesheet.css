@@ -28,6 +28,13 @@ body{
   display:block;
 
 }
+#main{
+  font-size: 70pt;
+}
+#specimen{
+  font-size: 30vw;
+  text-align: center;
+}
 #content0 h1{
   font-family:'RIPPLE';
   /*font-variation-settings: 'hght' 200;*/
@@ -44,13 +51,14 @@ body{
   color: #d8d5a0;
   line-height: 2;
   --hght: 100;
-  margin-left: 50px;
+  margin-left: 40px;
 }
 .button
 {
   display: inline-block;
   margin-left: 30px;
 }
+
 #intro{
   font-size: 27vw;
   color: transparent;
@@ -70,4 +78,10 @@ body{
 }
 h2{
   color:red;
+}
+.highlight{
+line-height: 1.8;
+margin-left: 20pt;
+text-align: center;
+
 }

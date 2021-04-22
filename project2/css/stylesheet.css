@@ -204,6 +204,27 @@ h1{
     font-variation-settings: 'hght' 100;
   }
 }
+
+h2{
+  background-color: #3892f4;
+  color: #f6f7eb;
+  font-size: 6vw;
+  line-height: 2.5;
+  margin-top: 100px;
+  text-align: center;
+  display: block;
+  font-variation-settings: 'hght' 200;
+  animation: breathe 8000ms infinite forwards;
+}
+@keyframes breathe {
+  60% {
+    font-variation-settings: 'hght' 1400;
+  }
+
+  100% {
+    font-variation-settings: 'hght' 100;
+  }
+}
 #intro{
   font-size: 100pt;
   line-height: 1;

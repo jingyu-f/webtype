@@ -192,6 +192,21 @@ display: none;
   display: block;
 }
 h1{
-  font-size: 5vw;
-  margin: 30px;
+  color: #3892f4;
+  font-size: 6vw;
+  line-height: 1.7;
+  margin-top: 1000px;
+  margin-left: 100px;
+  display: block;
+  font-variation-settings: 'hght' 200;
+  animation: breathe 4000ms infinite forwards;
+}
+@keyframes breathe {
+  60% {
+    font-variation-settings: 'hght' 1400;
+  }
+
+  100% {
+    font-variation-settings: 'hght' 100;
+  }
 }

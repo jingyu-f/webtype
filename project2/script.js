@@ -77,7 +77,7 @@ $.getJSON('http://api.openweathermap.org/data/2.5/weather?q=Seattle&appid=9f4a66
     $('#wind_seattle').text(wind_seattle);
     let hght = 0;
     if (wind_seattle !== 0){
-         hght = Math.round(wind_seattle*100);
+         hght = Math.round(wind_seattle*90);
     }
 
     console.log(hght);
@@ -94,7 +94,7 @@ $.getJSON('http://api.openweathermap.org/data/2.5/weather?q=San Francisco&appid=
     $('#wind_sf').text(wind_sf);
     let hght = 0;
     if (wind_sf !== 0){
-         hght = Math.round(wind_sf*100);
+         hght = Math.round(wind_sf*90);
     }
 
     console.log(hght);
@@ -111,7 +111,7 @@ $.getJSON('http://api.openweathermap.org/data/2.5/weather?q=Dallas&appid=9f4a66a
     $('#wind_dallas').text(wind_dallas);
     let hght = 0;
     if (wind_dallas !== 0){
-         hght = Math.round(wind_dallas*100);
+         hght = Math.round(wind_dallas*90);
     }
 
     console.log(hght);
@@ -128,7 +128,7 @@ $.getJSON('http://api.openweathermap.org/data/2.5/weather?q=Chicago&appid=9f4a66
     $('#wind_chicago').text(wind_chicago);
     let hght = 0;
     if (wind_chicago !== 0){
-         hght = Math.round(wind_chicago*100);
+         hght = Math.round(wind_chicago*90);
     }
 
     console.log(hght);
@@ -145,7 +145,7 @@ $.getJSON('http://api.openweathermap.org/data/2.5/weather?q=Detroit&appid=9f4a66
     $('#wind_detroit').text(wind_detroit);
     let hght = 0;
     if (wind_detroit !== 0){
-         hght = Math.round(wind_detroit*100);
+         hght = Math.round(wind_detroit*90);
     }
 
     console.log(hght);
@@ -154,7 +154,7 @@ $.getJSON('http://api.openweathermap.org/data/2.5/weather?q=Detroit&appid=9f4a66
     $('.highlight_6').css('font-variation-settings', setting);
   });
   //
-  $.getJSON('http://api.openweathermap.org/data/2.5/weather?q=Detroit&appid=9f4a66a4052ffb8b92e0dd59a8d99657&units=imperial', function(data) {
+  $.getJSON('http://api.openweathermap.org/data/2.5/weather?q=Washington&appid=9f4a66a4052ffb8b92e0dd59a8d99657&units=imperial', function(data) {
 
     console.log(data);
       let wind_washington = data["wind"]["speed"];
@@ -162,7 +162,7 @@ $.getJSON('http://api.openweathermap.org/data/2.5/weather?q=Detroit&appid=9f4a66
       $('#wind_washington').text(wind_washington);
       let hght = 0;
       if (wind_washington !== 0){
-           hght = Math.round(wind_washington*100);
+           hght = Math.round(wind_washington*90);
       }
 
       console.log(hght);
@@ -179,7 +179,7 @@ $.getJSON('http://api.openweathermap.org/data/2.5/weather?q=Detroit&appid=9f4a66
         $('#wind_newyork').text(wind_newyork);
         let hght = 0;
         if (wind_newyork !== 0){
-             hght = Math.round(wind_newyork*100);
+             hght = Math.round(wind_newyork*90);
         }
 
         console.log(hght);
@@ -196,7 +196,7 @@ $.getJSON('http://api.openweathermap.org/data/2.5/weather?q=Boston&appid=9f4a66a
     $('#wind_boston').text(wind_boston);
     let hght = 0;
     if (wind_boston !== 0){
-         hght = Math.round(wind_boston*100);
+         hght = Math.round(wind_boston*90);
     }
 
     console.log(hght);

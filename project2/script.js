@@ -24,7 +24,7 @@ $('#specimen').mousemove(function(event) {
 
   let cursorY = 1 - (event.pageY) / $(this).height();
 
-  let settingY = Math.floor(cursorY * hghtmax);
+  let settingY = Math.floor(cursorY * 1400);
 
 
   $("#letter_row1").css({
@@ -205,3 +205,19 @@ $.getJSON('http://api.openweathermap.org/data/2.5/weather?q=Boston&appid=9f4a66a
     $('.highlight_9').css('font-variation-settings', setting);
   });
 //
+$.getJSON('http://api.openweathermap.org/data/2.5/weather?q=Baltimore&appid=9f4a66a4052ffb8b92e0dd59a8d99657&units=imperial', function(data) {
+
+  console.log(data);
+    let wind_baltimore = data["wind"]["speed"];
+
+    $('#wind_baltimore').text(wind_baltimore);
+    let hght = 0;
+    if (wind_baltimore !== 0){
+         hght = Math.round(wind_baltimore*90);
+    }
+
+    console.log(hght);
+
+    let setting = "'hght' " + hght;
+    $('.highlight_10').css('font-variation-settings', setting);
+  });

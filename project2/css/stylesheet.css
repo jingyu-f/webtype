@@ -30,10 +30,7 @@ body{
 
 }
 
-#specimen{
-  font-size: 30vw;
-  text-align: center;
-}
+
 #content0 h1{
   font-family:'RIPPLE';
   /*font-variation-settings: 'hght' 200;*/
@@ -96,7 +93,7 @@ body{
 h2{
   color:red;
 }
-.highlight, .highlight_1, .highlight_2, .highlight_3, .highlight_4, .highlight_5, .highlight_6, .highlight_7, .highlight_8, .highlight_9{
+.highlight, .highlight_1, .highlight_2, .highlight_3, .highlight_4, .highlight_5, .highlight_6, .highlight_7, .highlight_8, .highlight_9, .highlight_10{
   font-size: 90pt;
   line-height: 2;
   padding-top: 50pt;
@@ -145,8 +142,12 @@ display: none;
   background-color: #615a26;
   color: white;
 }
+.highlight_10{
+  background-color: #1e7887;
+  color: white;
+}
 
-.show_0, .show_1, .show_2, .show_3, .show_4, .show_5, .show_6, .show_7, .show_8, .show_9{
+.show_0, .show_1, .show_2, .show_3, .show_4, .show_5, .show_6, .show_7, .show_8, .show_9, .show_10{
   font-size: 15pt;
   color: white;
   line-height: 2;
@@ -186,4 +187,11 @@ display: none;
 }
 .show_9:hover + .highlight_9 {
   display: block;
+}
+.show_10:hover + .highlight_10 {
+  display: block;
+}
+h1{
+  font-size: 5vw;
+  margin: 30px;
 }

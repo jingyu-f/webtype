@@ -109,7 +109,7 @@ display: none;
   color: white;
 }
 .highlight_3{
-  background-color: #ef00d9;
+  background-color: #a7b1c4;
   color: white;
 }
 .highlight_4{
@@ -125,7 +125,7 @@ display: none;
   color: white;
 }
 .highlight_7{
-  background-color: #fd1a16;
+  background-color: #113826;
   color: white;
 }
 .highlight_8{
@@ -257,6 +257,20 @@ br{
 }
 
 #specimen{
-  font-size: 20vw;
-  text-align: center;
+  font-size: 10vw;
+  text-align: left;
+}
+#letter_row1{
+  transition: font-variation-settings 400ms ease-in-out;
+  display: inline-block;
+}
+#letter_row1:hover{
+  font-variation-settings: 'hght' 1400;
+}
+#letter_row2{
+  transition: font-variation-settings 400ms ease-in-out;
+  display: inline-block;
+}
+#letter_row2:hover{
+  font-variation-settings: 'hght' 1400;
 }

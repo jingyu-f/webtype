@@ -4,34 +4,46 @@ console.log('script loaded');
 
 const hghtmax = 1400;
 
-$('.axis-range').on('input', function(){
+  $('.axis-range').on('input', function(){
 
-  let value = parseInt($(this).val()); //get slider input value
- //console.log(value);
+    let value = parseInt($(this).val()); //get slider input value
+   //console.log(value);
 
-  const slidertype = $(this).data('slidertype'); //get slider axis
+    const slidertype = $(this).data('slidertype'); //get slider axis
 
-  console.log("--"+slidertype, value );
+    console.log("--"+slidertype, value );
 
-  $('#dominant').css("--"+slidertype, value);
+    $('#dominant').css("--"+slidertype, value);
 
-});
-});
-//mousemove
-$('#specimen').mousemove(function(event) {
-
-  console.log(event.pageY);
-
-  let cursorY = 1 - (event.pageY) / $(this).height();
-
-  let settingY = Math.floor(cursorY * 1400);
-
-
-  $("#letter_row1").css({
-    "--hght": settingY
   });
 
+  var observer = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(function(entry) {
+      // Pause/Play the animation
+      if (entry.isIntersecting) entry.target.style.animationPlayState = "running"
+      else entry.target.style.animationPlayState = "paused"
+    });
+  });
+
+  var variableTexts = document.querySelectorAll(".animated");
+  variableTexts.forEach(function(el) { observer.observe(el); });
+
 });
+// //mousemove
+// $('#specimen').mousemove(function(event) {
+//
+//   console.log(event.pageY);
+//
+//   let cursorY = 1 - (event.pageY) / $(this).height();
+//
+//   let settingY = Math.floor(cursorY * 1400);
+//
+//
+//   $("#letter_row1").css({
+//     "--hght": settingY
+//   });
+//
+// });
 
 let html = "";
 $.getJSON('https://api.openweathermap.org/data/2.5/weather?q=Providence&appid=9f4a66a4052ffb8b92e0dd59a8d99657&units=imperial', function(data) {

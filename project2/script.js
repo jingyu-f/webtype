@@ -215,6 +215,7 @@ $.getJSON('https://api.openweathermap.org/data/2.5/weather?q=Boston&appid=9f4a66
 
     let setting = "'hght' " + hght;
     $('.highlight_9').css('font-variation-settings', setting);
+    $('.highlight_9_0').css('font-variation-settings', setting);
   });
 //
 $.getJSON('https://api.openweathermap.org/data/2.5/weather?q=Baltimore&appid=9f4a66a4052ffb8b92e0dd59a8d99657&units=imperial', function(data) {
@@ -249,4 +250,5 @@ $.getJSON('https://api.openweathermap.org/data/2.5/weather?q=Baltimore&appid=9f4
 
       let setting = "'hght' " + hght;
       $('.highlight_11').css('font-variation-settings', setting);
+      $('.highlight_11_0').css('font-variation-settings', setting);
     });

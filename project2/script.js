@@ -147,6 +147,7 @@ $.getJSON('https://api.openweathermap.org/data/2.5/weather?q=Chicago&appid=9f4a6
 
     let setting = "'hght' " + hght;
     $('.highlight_5').css('font-variation-settings', setting);
+    $('.highlight_5_0').css('font-variation-settings', setting);
   });
 //
 $.getJSON('https://api.openweathermap.org/data/2.5/weather?q=Detroit&appid=9f4a66a4052ffb8b92e0dd59a8d99657&units=imperial', function(data) {
@@ -164,6 +165,7 @@ $.getJSON('https://api.openweathermap.org/data/2.5/weather?q=Detroit&appid=9f4a6
 
     let setting = "'hght' " + hght;
     $('.highlight_6').css('font-variation-settings', setting);
+    $('.highlight_6_0').css('font-variation-settings', setting);
   });
 //
   $.getJSON('https://api.openweathermap.org/data/2.5/weather?q=Washington&appid=9f4a66a4052ffb8b92e0dd59a8d99657&units=imperial', function(data) {
@@ -181,6 +183,7 @@ $.getJSON('https://api.openweathermap.org/data/2.5/weather?q=Detroit&appid=9f4a6
 
       let setting = "'hght' " + hght;
       $('.highlight_7').css('font-variation-settings', setting);
+      $('.highlight_7_0').css('font-variation-settings', setting);
     });
 //
 $.getJSON('https://api.openweathermap.org/data/2.5/weather?q=New York&appid=9f4a66a4052ffb8b92e0dd59a8d99657&units=imperial', function(data) {
@@ -198,6 +201,7 @@ $.getJSON('https://api.openweathermap.org/data/2.5/weather?q=New York&appid=9f4a
 
         let setting = "'hght' " + hght;
         $('.highlight_8').css('font-variation-settings', setting);
+        $('.highlight_8_0').css('font-variation-settings', setting);
       });
 //
 $.getJSON('https://api.openweathermap.org/data/2.5/weather?q=Boston&appid=9f4a66a4052ffb8b92e0dd59a8d99657&units=imperial', function(data) {
@@ -233,6 +237,7 @@ $.getJSON('https://api.openweathermap.org/data/2.5/weather?q=Baltimore&appid=9f4
 
     let setting = "'hght' " + hght;
     $('.highlight_10').css('font-variation-settings', setting);
+    $('.highlight_10_0').css('font-variation-settings', setting);
   });
   //
   $.getJSON('https://api.openweathermap.org/data/2.5/weather?q=Philadelphia&appid=9f4a66a4052ffb8b92e0dd59a8d99657&units=imperial', function(data) {

@@ -1,0 +1,26 @@
+@font-face{
+  font-family:'DIARY';
+  src: url('../font/DIARY.ttf') format('truetype-variations');
+}
+:root{
+  --wght: 100;
+  --hue: 180;
+  --sat: 50;
+}
+
+.DIARY, .DIARY *{
+  font-variation-settings: 'wght' var(--wght);
+}
+
+html, body { background-color: #f6f7eb; height:100%; margin:0; padding:0 }
+#shape{
+	font-family: 'DIARY', sans-serif;
+	font-style: normal;
+	font-size: 100px;
+	line-height: 1.5;
+	margin-bottom: 4rem;
+  color: hsl(var(--hue), 60%, 50%);
+}
+#sliders{
+  font-family: 'Recursive', monospace;
+}

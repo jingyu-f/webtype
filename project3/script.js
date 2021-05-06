@@ -6,6 +6,7 @@ const wghtmax = 500;
 const huemax = 360;
 
 
+
   $('.axis-range').on('input', function(){
 
     let value = parseInt($(this).val()); //get slider input value
@@ -16,6 +17,7 @@ const huemax = 360;
     console.log("--"+slidertype, value );
 
     $('#shape').css("--"+slidertype, value);
+
 
   });
 });

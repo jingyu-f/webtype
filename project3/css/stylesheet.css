@@ -2,8 +2,19 @@
   font-family:'DIARY';
   src: url('../font/DIARY.ttf') format('truetype-variations');
 }
+
+@font-face{
+  font-family:'RECURSIVE';
+  font-style: oblique -15deg 0deg;
+  font-weight: 300 1000;
+  font-display: swap;
+  src: url('../font/Recursive_VF_1.043--subset_range_latin_1_punc.woff2') format('woff2');
+  unicode-range: U+0020-007F,U+00A9,U+2190-2193,U+2018,U+2019,U+201C,U+201D,U+2022;
+}
+
 :root{
   --wght: 100;
+  --casl: 0.8;
   --hue: 180;
   --sat: 50;
 }
@@ -11,16 +22,38 @@
 .DIARY, .DIARY *{
   font-variation-settings: 'wght' var(--wght);
 }
+.RECURSIVE, .RECURSIVE *{
+  font-variation-settings: 'CASL' var(--casl);
+}
 
 html, body { background-color: #f6f7eb; height:100%; margin:0; padding:0 }
+
 #shape{
 	font-family: 'DIARY', sans-serif;
 	font-style: normal;
-	font-size: 100px;
+	font-size: 1000px;
 	line-height: 1.5;
 	margin-bottom: 4rem;
   color: hsl(var(--hue), 60%, 50%);
 }
-#sliders{
-  font-family: 'Recursive', monospace;
+.theme{
+  font-family:'RECURSIVE', monospace;
+  font-size: 110px;
+  text-align: center;
+  padding-top: 200px;
+}
+
+.sliders{
+  font-family:'RECURSIVE', monospace;
+  font-size: 24px;
+  text-align: center;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  padding: 10px;
+  border: 1px;
+  background-color: white;
+}
+.range-name{
+  display: inline-block;
 }

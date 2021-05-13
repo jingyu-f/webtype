@@ -1,37 +1,40 @@
 $(document).ready(function(){
 
-console.log('script loaded');
+  console.log('script loaded');
 
-const wghtmax = 500;
-const lummax = 100;
+  const wghtmax = 500;
+  const lummax = 100;
 
-let value;
+  let value;
 
   $('.axis-range').on('input', function(){
 
-    value = parseInt($(this).val()); //get slider input value
-    console.log(value);
+      value = parseInt($(this).val()); //get slider input value
+      console.log(value);
 
-    const slidertype = $(this).data('type'); //get slider axis
-
+      let slidertype = $(this).data('type'); //get slider axis
       console.log("--"+slidertype, value);
-
      $('#shape').css("--"+slidertype, value);
   });
 
-  $('form').submit(function(e){
+  $('#submit').click(function(e){
 	    console.log('submit');
 
 	    let plain = $('#plain').val();
 	    $('#word').text(plain);
 
-      let shape = $('#shape').val();
-      $('#newshape').text(shape);
-      //let css = $('#shape').css();
-      //$('#newshape').css(css);
+      // let shape = $('#shape').val();
+      // $('#newshape').text(shape);
 
-      $('form').hide();
+      let css = $('#shape').attr('style');
+      console.log(css);
+
+
+      $('#newshape').attr('style', css);
+
+      $('.form').hide();
       $('#poster').show();
+      
       // $('#newshape').append(cellname);
       //
       //
@@ -42,10 +45,9 @@ let value;
       //
 	    // $('#output').show(); //show output upon submission
 
-	    return false;
 	});
 
   var dt = new Date();
-document.getElementById('date-time').innerHTML=dt;
+  document.getElementById('date-time').innerHTML = dt;
 
 });

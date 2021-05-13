@@ -59,6 +59,22 @@ input.axis-range{
   padding-top: 160px;
   color: hsl(var(--hue), calc(var(--sat)*1%), calc(var(--lum)*1%));
 }
+
+#newshape{
+  font-family: 'DIARY', sans-serif;
+	font-style: normal;
+	font-size: 1000px;
+	line-height: 0.2;
+	margin-bottom: 0rem;
+  padding-top: 160px;
+  color: hsl(var(--hue), calc(var(--sat)*1%), calc(var(--lum)*1%));
+  font-weight: var(--wght);
+  z-index: 10;
+  position: absolute;
+  left: 30%;
+  padding-top: 20px;
+
+}
 #small_shape0{
   font-family: 'DIARY', sans-serif;
   font-style: normal;
@@ -75,7 +91,7 @@ input.axis-range{
 #small_shape0:hover{
   font-variation-settings: 'wght' 350;
   -webkit-transform: rotate(360deg) translateZ(0);
-  color: black;
+  color: grey;
   font-size: 200px;
 }
 
@@ -127,7 +143,7 @@ input.axis-range{
   font-family: 'DIARY', sans-serif;
   font-style: normal;
   color: #c9c597;
-  font-size: 170px;
+  font-size: 200px;
   top: 380px;
   right: 600px;
   --wght: 400;
@@ -137,17 +153,17 @@ input.axis-range{
 }
 #small_shape3:hover{
   font-variation-settings: 'wght' 200;
-  transition: font-variation-settings 400ms ease-in-out;
+  transition: font-variation-settings 500ms ease-in-out;
   color: #41aa54;
-  font-size: 170px;
+  font-size: 200px;
 }
 #small_shape4{
   font-family: 'DIARY', sans-serif;
   font-style: normal;
   color: #113826;
   font-size: 240px;
-  top: 40px;
-  right: 500px;
+  top: 54px;
+  right: 530px;
   --wght: 200;
   position: absolute;
   display: inline-block;
@@ -190,6 +206,124 @@ input.axis-range{
 }
 @keyframes spin{
   100%{-webkit-transform: rotate(360);}
+}
+#small_shape6{
+  font-family: 'DIARY', sans-serif;
+  font-style: normal;
+  color: red;
+  font-size: 230px;
+  top: 300px;
+  right: 360px;
+  --wght: 100;
+  position: absolute;
+  transition: font-variation-settings 400ms ease-in-out;
+  display: inline-block;
+  -webkit-transition: -webkit-transform 0.8s;
+}
+#small_shape6:hover{
+  font-variation-settings: 'wght' 150;
+  color: white;
+  font-size: 230px;
+}
+
+#small_shape7{
+  font-family: 'DIARY', sans-serif;
+  font-style: normal;
+  color: rgba(0,0,0,0);
+  font-size: 300px;
+  top: 180px;
+  left: 260px;
+  --wght: 200;
+  position: absolute;
+  transition: font-variation-settings 400ms ease-in-out;
+  display: inline-block;
+  -webkit-transition: -webkit-transform 0.8s;
+}
+#small_shape7:hover{
+  font-variation-settings: 'wght' 240;
+  font-size: 600px;
+  color: pink;
+  font-size: 200px;
+}
+#small_shape8{
+  font-family: 'DIARY', sans-serif;
+  font-style: normal;
+  color: #ffff01;
+  font-size: 200px;
+  top: 320px;
+  left: 100px;
+  --wght: 100;
+  position: absolute;
+  display: inline-block;
+  -webkit-transition: -webkit-transform 0.8s;
+}
+#small_shape8:hover{
+  font-variation-settings: 'wght' 320;
+  transition: font-variation-settings 500ms ease-in-out;
+  color: #b1efdc;
+  font-size: 200px;
+}
+
+#small_shape9{
+  font-family: 'DIARY', sans-serif;
+  font-style: normal;
+  color: rgba(0,0,0,0);
+  font-size: 200px;
+  top: 500px;
+  right: 430px;
+  --wght: 200;
+  position: absolute;
+  transition: font-variation-settings 400ms ease-in-out;
+  display: inline-block;
+  -webkit-transition: -webkit-transform 0.8s;
+}
+#small_shape9:hover{
+  font-variation-settings: 'wght' 300;
+  -webkit-transform: rotate(360deg) translateZ(0);
+  color: green;
+  font-size: 200px;
+}
+
+#small_shape10{
+  font-family: 'DIARY', sans-serif;
+  font-style: normal;
+  font-size: 200px;
+  top: 230px;
+  left: 380px;
+  position: absolute;
+  display: inline-block;
+  font-variation-settings: 'wght' 300;
+  animation: breathe1 20000ms infinite forwards;
+}
+@keyframes breathe1 {
+  80% {
+    font-variation-settings: 'wght' 500;
+    color: #8b92e8;
+  }
+
+  100% {
+    font-variation-settings: 'wght' 200;
+     color: black;
+  }
+}
+
+#small_shape11{
+  font-family: 'DIARY', sans-serif;
+  font-style: normal;
+  color: #349980;
+  font-size: 230px;
+  top: 460px;
+  right: 180px;
+  --wght: 500;
+  position: absolute;
+  display: inline-block;
+  -webkit-transition: -webkit-transform 0.8s;
+}
+#small_shape11:hover{
+  font-variation-settings: 'wght' 100;
+  transition: font-variation-settings 700ms ease-in-out;
+  color: #ef26ef;
+  font-size: 230px;
 }
 
 body{

@@ -5,70 +5,76 @@
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css" media="screen">
   <link href="https://fonts.googleapis.com/css2?family=Recursive&display=swap" rel="stylesheet">
   <script   src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous"></script>
-   <script src="https://unpkg.com/konva@7.2.5/konva.min.js"></script>
+  <script src="https://unpkg.com/konva@7.2.5/konva.min.js"></script>
   <script src="script.js"></script>
   <title>Jingyu's Site</title>
   <!-- this is where my meta-info lives, but won’t show up on the page itself-->
 </head>
 <body>
-<form>
+<div class="form">
   <section class="theme" id="u">GENERATE <br>MY QUARANTINE<br> DIARY</section>
 
   <section id="intro" class="DIARY">
-      <div id="shape">o</div>
+    <div id="shape" style="--wght: 100">o</div>
   </section>
   <div>
-    <svg id="roof" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2162.14 464.21"><defs><style>.cls-1{fill:yellow;}</style></defs><rect class="cls-1" x="107.72" y="200.8" width="1000" height="5.58" transform="translate(-42.2 185.9) rotate(-16.88)"/><rect class="cls-1" x="1058.83" y="264" width="1000" height="5.58" transform="matrix(-0.96, -0.29, 0.29, -0.96, 2977.94, 912.12)"/></svg>
+    <svg id="roof" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2162.14 464.21"><defs><style>.cls-1{fill:#beac83;}</style></defs><rect class="cls-1" x="107.72" y="200.8" width="1000" height="5.58" transform="translate(-42.2 185.9) rotate(-16.88)"/><rect class="cls-1" x="1058.83" y="264" width="1000" height="5.58" transform="matrix(-0.96, -0.29, 0.29, -0.96, 2977.94, 912.12)"/></svg>
   </div>
-<section id="decoration" class="DIARY">
-<div id="small_shape0">o</div>
-<div id="small_shape1">o</div>
-<div id="small_shape2">o</div>
-<div id="small_shape3">o</div>
-<div id="small_shape4">o</div>
-<div id="small_shape5">o</div>
-</section>
+  <section id="decoration" class="DIARY">
+    <div id="small_shape0">o</div>
+    <div id="small_shape1">o</div>
+    <div id="small_shape2">o</div>
+    <div id="small_shape3">o</div>
+    <div id="small_shape4">o</div>
+    <div id="small_shape5">o</div>
+    <div id="small_shape6">o</div>
+    <div id="small_shape7">o</div>
+    <div id="small_shape8">o</div>
+    <div id="small_shape9">o</div>
+    <div id="small_shape10">o</div>
+    <div id="small_shape11">o</div>
+  </section>
 
   <section class="sliders">
+    <div class="range-name">Which mood am I?</div>
+    <span class="min">chill</span>
+    <input data-type="wght" class="range axis-range menu" type="range" min="100" max="500" value="100">
+    <span class="max">anxious</span>
+    <br>
 
-          <div class="range-name">Which mood am I?</div>
-          <span class="min">chill</span>
-              <input data-type="wght" class="range axis-range menu" type="range" min="100" max="500" value="100">
-            <span class="max">anxious</span>
-<br>
+    <div class="range-name">My energy feels</div>
+    <span class="min">low</span>
+    <input data-type="sat" class="range axis-range menu" type="range" min="0" max="100" step="1" value = "50" >
+    <span class="min">high</span>
+    <br>
+    <div class="range-name">How long did I spend outdoor today?</div>
+    <span class="min">0 min</span>
+    <input data-type="lum" class="range axis-range menu" type="range" min="10" max="100" value ="50" >
+    <span class="min">5 hours</span>
+    <br>
+    <div class="range-name">Color to depict my day</div>
+    <input data-type="hue" class="range axis-range menu" type="range" min="0" max="360" >
+  </section>
+  <section class="field">
+    <div class="text-field">
+      <label for="plain">Some Words to Describe My Day: </label>
+      <input type="text" id="plain" name="plain" placeholder="">
+    </div>
+    <button class="submit" id="submit">Submit</button>
+  </section>
+</div>
 
-              <div class="range-name">My energy feels like</div>
-              <span class="min">low</span>
-                  <input data-type="sat" class="range axis-range menu" type="range" min="0" max="100" step="1" value = "50" >
-              <span class="min">high</span>
-<br>
-          <div class="range-name">How long did I spend outdoor today?</div>
-          <span class="min">0 min</span>
-              <input data-type="lum" class="range axis-range menu" type="range" min="10" max="100" value ="50" >
-          <span class="min">5 hours</span>
-          <br>
-          <div class="range-name">Color to depict my day</div>
-              <input data-type="hue" class="range axis-range menu" type="range" min="0" max="360" >
-          </section>
-          <section class="field">
-            <div class="text-field">
-                <label for="plain">Use One Word to Describe Today: </label>
-                <input type="text" id="plain" name="plain" placeholder="">
-              </div>
-                  <button type="submit" class="submit" id="submit">Submit</button>
-          </section>
-            </form>
+  <section id="poster">
+    <div class="window"><img src="svg/window-09.png" width="800" height="800"></div>
+    <span id="newshape">o</span>
+    <div class="time"><span id='date-time'></span>
+      <div class="word_poster">"<span id="word"></span>."</div>
 
-<section id="poster">
-  <div class="window"><img src="svg/window-09.png" width="800" height="800"></div>
-  <div class="time"><span id='date-time'></span>
-  <div class="word_poster">"<span id="word"></span>."</div>
-  <span id="newshape"></span>
-</section>
-
-
+    </section>
 
 
 
-</body>
-</html>
+
+
+  </body>
+  </html>

@@ -325,24 +325,7 @@ input.axis-range{
   color: #ef26ef;
   font-size: 230px;
 }
-#small_shape12{
-  font-family: 'DIARY', sans-serif;
-  font-style: normal;
-  color: #71af8a;
-  font-size: 100px;
-  top: 450px;
-  left: 600px;
-  --wght: 200;
-  position: absolute;
-  transition: font-variation-settings 400ms ease-in-out;
-  display: inline-block;
-  -webkit-transition: -webkit-transform 0.8s;
-}
-#small_shape12:hover{
-  font-variation-settings: 'wght' 240;
-  font-size: 100px;
-  color: pink;
-}
+
 body{
 	font-family: 'RECURSIVE', monospace;
 	font-style: normal;
@@ -356,19 +339,23 @@ body{
   font-size: 160px;
   text-align: center;
   padding-top: 130px;
-  animation: theme_color 28000ms infinite forwards;
+  animation: theme_color 48000ms infinite forwards;
   --casl: 0.4;
 }
 @keyframes theme_color {
-  40% {
+  35% {
     color: yellow;
   }
 
-  60% {
+  50% {
+    color: white;
+  }
+
+  84% {
     color: green;
   }
 
-  90% {
+  93% {
     color: red;
   }
 }

@@ -11,9 +11,9 @@
   <!-- this is where my meta-info lives, but won’t show up on the page itself-->
 </head>
 <body>
-
-  <section class="theme" id="u">GENERATE <br>MY QUARANTINE<br> DIARY</section>
 <form>
+  <section class="theme" id="u">GENERATE <br>MY QUARANTINE<br> DIARY</section>
+
   <section id="intro" class="DIARY">
       <div id="shape">o</div>
   </section>
@@ -30,28 +30,40 @@
 </section>
 
   <section class="sliders">
+
           <div class="range-name">Which mood am I?</div>
+          <span class="min">chill</span>
               <input data-type="wght" class="range axis-range menu" type="range" min="100" max="500" value="100">
-
-          <div class="range-name">Color to describe today</div>
+            <span class="max">anxious</span>
+<br>
+          <div class="range-name">Color to depict my day</div>
               <input data-type="hue" class="range axis-range menu" type="range" min="0" max="360" >
-
+<br>
               <div class="range-name">My energy feels like</div>
+              <span class="min">low</span>
                   <input data-type="sat" class="range axis-range menu" type="range" min="0" max="100" step="1" value = "50" >
-
+              <span class="min">high</span>
+<br>
           <div class="range-name">How long did I spend outdoor today?</div>
+          <span class="min">0 min</span>
               <input data-type="lum" class="range axis-range menu" type="range" min="10" max="100" value ="50" >
-
+          <span class="min">5 hours</span>
           </section>
-              <div class="field">
-                <label for="plain">One Word to Describe Today</label>
+          <section class="field">
+            <div class="text-field">
+                <label for="plain">Use One Word to Describe Today: </label>
                 <input type="text" id="plain" name="plain" placeholder="">
               </div>
                   <button type="submit" class="submit" id="submit">Submit</button>
+          </section>
             </form>
 
 <section id="poster">
   You said<span id="word"></span>.
+  <span id="newshape"></span>
+  <div class="window"><img src="svg/window-09.png" width="800" height="800"></div>
+  <div class="time"><span id='date-time'></span>.
+
 </section>
 
 

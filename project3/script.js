@@ -25,8 +25,8 @@ let value;
 	    let plain = $('#plain').val();
 	    $('#word').text(plain);
 
-      //let shape = $('#shape').val();
-      //$('#newshape').text(shape);
+      let shape = $('#shape').val();
+      $('#newshape').text(shape);
       //let css = $('#shape').css();
       //$('#newshape').css(css);
 
@@ -45,5 +45,7 @@ let value;
 	    return false;
 	});
 
+  var dt = new Date();
+document.getElementById('date-time').innerHTML=dt;
 
 });

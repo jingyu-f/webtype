@@ -5,28 +5,58 @@
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css" media="screen">
   <link href="https://fonts.googleapis.com/css2?family=Recursive&display=swap" rel="stylesheet">
   <script   src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous"></script>
+   <script src="https://unpkg.com/konva@7.2.5/konva.min.js"></script>
   <script src="script.js"></script>
   <title>Jingyu's Site</title>
   <!-- this is where my meta-info lives, but won’t show up on the page itself-->
 </head>
 <body>
-  <section class="theme" id="u">GENERATE <br>MY QUARANTINE<br> DIARY</section>
 
+  <section class="theme" id="u">GENERATE <br>MY QUARANTINE<br> DIARY</section>
+<form>
   <section id="intro" class="DIARY">
       <div id="shape">o</div>
   </section>
-  <img src="svg/house-08.svg" >
+  <div>
+    <svg id="roof" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2162.14 464.21"><defs><style>.cls-1{fill:yellow;}</style></defs><rect class="cls-1" x="107.72" y="200.8" width="1000" height="5.58" transform="translate(-42.2 185.9) rotate(-16.88)"/><rect class="cls-1" x="1058.83" y="264" width="1000" height="5.58" transform="matrix(-0.96, -0.29, 0.29, -0.96, 2977.94, 912.12)"/></svg>
+  </div>
+<section id="decoration" class="DIARY">
+<div id="small_shape0">o</div>
+<div id="small_shape1">o</div>
+<div id="small_shape2">o</div>
+<div id="small_shape3">o</div>
+<div id="small_shape4">o</div>
+<div id="small_shape5">o</div>
+</section>
+
   <section class="sliders">
           <div class="range-name">Which mood am I?</div>
               <input data-type="wght" class="range axis-range menu" type="range" min="100" max="500" value="100">
 
-          <div class="range-name">slider</div>
-              <input data-type="hue" class="range axis-range menu" type="range" min="0" max="360" value="180">
+          <div class="range-name">Color to describe today</div>
+              <input data-type="hue" class="range axis-range menu" type="range" min="0" max="360" >
 
-          <div class="range-name">How long did I spend outdoor?</div>
-              <input data-type="sat" class="range axis-range menu" type="range" min="0" max="100" step="1" value="50">
+              <div class="range-name">My energy feels like</div>
+                  <input data-type="sat" class="range axis-range menu" type="range" min="0" max="100" step="1" value = "50" >
+
+          <div class="range-name">How long did I spend outdoor today?</div>
+              <input data-type="lum" class="range axis-range menu" type="range" min="10" max="100" value ="50" >
+
+          </section>
+              <div class="field">
+                <label for="plain">One Word to Describe Today</label>
+                <input type="text" id="plain" name="plain" placeholder="">
+              </div>
+                  <button type="submit" class="submit" id="submit">Submit</button>
+            </form>
+
+<section id="poster">
+  You said<span id="word"></span>.
+</section>
 
 
-  </section>
+
+
+
 </body>
 </html>

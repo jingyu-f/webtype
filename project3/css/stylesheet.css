@@ -8,16 +8,18 @@
   font-style: oblique -15deg 0deg;
   font-weight: 300 1000;
   font-display: swap;
-  src: url('../font/Recursive_VF_1.043--subset_range_latin_1_punc.woff2') format('woff2');
+  src: url('../font/Recursive_VF_1.043--subset_range_english_basic.woff2') format('woff2-variations');
   unicode-range: U+0020-007F,U+00A9,U+2190-2193,U+2018,U+2019,U+201C,U+201D,U+2022;
 }
 
 :root{
   --wght: 100;
-  --casl: 0.8;
   --hue: 180;
   --sat: 50;
+  --lum: 80;
+  --casl: 1;
 }
+
 
 .DIARY, .DIARY *{
   font-variation-settings: 'wght' var(--wght);
@@ -26,34 +28,224 @@
   font-variation-settings: 'CASL' var(--casl);
 }
 
-html, body { background-color: #f6f7eb; height:100%; margin:0; padding:0 }
+html, body { background-color: #f6f7eb; height:100%; margin:0; padding:0;}
+
+#roof{
+  position: absolute;
+  top:0pt;
+}
+
 
 #shape{
 	font-family: 'DIARY', sans-serif;
 	font-style: normal;
 	font-size: 1000px;
-	line-height: 1.5;
-	margin-bottom: 4rem;
-  color: hsl(var(--hue), 60%, 50%);
+	line-height: 0.2;
+	margin-bottom: 0rem;
+  color: hsl(var(--hue), calc(var(--sat)*1%), calc(var(--lum)*1%));
+}
+#small_shape0{
+  font-family: 'DIARY', sans-serif;
+  font-style: normal;
+  color: rgba(0,0,0,0);
+  font-size: 300px;
+  top: 10px;
+  left: 370px;
+  --wght: 200;
+  position: absolute;
+  transition: font-variation-settings 400ms ease-in-out;
+  display: inline-block;
+  -webkit-transition: -webkit-transform 0.8s;
+}
+#small_shape0:hover{
+  font-variation-settings: 'wght' 350;
+  -webkit-transform: rotate(360deg) translateZ(0);
+  color: grey;
+  font-size: 200px;
+}
+
+#small_shape1{
+  font-family: 'DIARY', sans-serif;
+  font-style: normal;
+  color: rgba(0, 0, 0, 0);
+  font-size: 200px;
+  top: 200px;
+  left: 600px;
+  --wght: 200;
+  position: absolute;
+  transition: font-variation-settings 400ms ease-in-out;
+  display: inline-block;
+  -webkit-transition: -webkit-transform 0.8s;
+}
+#small_shape1:hover{
+  font-variation-settings: 'wght' 200;
+  -webkit-transform: rotate(360deg) translateZ(0);
+  color: red;
+  font-size: 200px;
+}
+
+#small_shape2{
+  font-family: 'DIARY', sans-serif;
+  font-style: normal;
+  color: grey;
+  font-size: 300px;
+  top: 380px;
+  left: 320px;
+  position: absolute;
+  display: inline-block;
+  font-variation-settings: 'wght' 200;
+  animation: breathe 10000ms infinite;
+}
+@keyframes breathe {
+  60% {
+    font-variation-settings: 'wght' 500;
+    color: blue;
+  }
+
+  100% {
+    font-variation-settings: 'wght' 100;
+     color: grey;
+  }
+}
+
+#small_shape3{
+  font-family: 'DIARY', sans-serif;
+  font-style: normal;
+  color: #c9c597;
+  font-size: 170px;
+  top: 380px;
+  right: 600px;
+  --wght: 400;
+  position: absolute;
+  display: inline-block;
+  -webkit-transition: -webkit-transform 0.8s;
+}
+#small_shape3:hover{
+  font-variation-settings: 'wght' 200;
+  transition: font-variation-settings 400ms ease-in-out;
+  color: #41aa54;
+  font-size: 170px;
+}
+#small_shape4{
+  font-family: 'DIARY', sans-serif;
+  font-style: normal;
+  color: #113826;
+  font-size: 240px;
+  top: 40px;
+  right: 500px;
+  --wght: 200;
+  position: absolute;
+  display: inline-block;
+  -webkit-transition: -webkit-transform 0.8s;
+}
+#small_shape4:hover{
+  font-variation-settings: 'wght' 500;
+  transition: font-variation-settings 400ms ease-in-out;
+  color: #a7b1c4;
+  font-size: 240px;
+}
+
+#small_shape5{
+  font-family: 'DIARY', sans-serif;
+  font-style: normal;
+  font-size: 330px;
+  top: 30px;
+  right: 200px;
+  position: absolute;
+  display: inline-block;
+  font-variation-settings: 'wght' 300;
+  animation: breathe0 20000ms infinite forwards;
+}
+@keyframes breathe0 {
+  20% {
+    font-variation-settings: 'wght' 100;
+    color: #daef18;
+  }
+
+  100% {
+    font-variation-settings: 'wght' 500;
+     color: #b3c6a5;
+  }
+}
+@-webkit-keyframes spin{
+  100%{-webkit-transform: rotate(360);}
+}
+@-moz-keyframes spin{
+  100%{-webkit-transform: rotate(360);}
+}
+@keyframes spin{
+  100%{-webkit-transform: rotate(360);}
+}
+
+body{
+	font-family: 'RECURSIVE', monospace;
+	font-style: normal;
+}
+#word{
+  font-size: 20pt;
+  font-family:'RECURSIVE', monospace;
 }
 .theme{
   font-family:'RECURSIVE', monospace;
-  font-size: 110px;
+  font-size: 160px;
   text-align: center;
-  padding-top: 200px;
+  padding-top: 130px;
+  animation: theme_color 28000ms infinite forwards;
+  --casl: 0.4;
+}
+@keyframes theme_color {
+  40% {
+    color: yellow;
+  }
+
+  60% {
+    color: green;
+  }
+
+  90% {
+    color: red;
+  }
 }
 
-.sliders{
+button{
+	font-family: 'RECURSIVE', monospace;
+	font-size: 1em;
+	background: white;
+	border-radius: 50%;
+	outline: none;
+	border: 2px solid black;
+	padding: 1em;
+	margin-top: 1rem;
+}
+.sliders, .field{
   font-family:'RECURSIVE', monospace;
-  font-size: 24px;
-  text-align: center;
+  font-size: 22px;
+  text-align: left;
   position: fixed;
+  line-height: 25pt;
   bottom: 0px;
   left: 0px;
   padding: 10px;
   border: 1px;
+  background-color: pink;
+}
+.submit{
+  font-family:'RECURSIVE', monospace;
+  font-size: 22px;
   background-color: white;
+  position: relative;
+
 }
 .range-name{
   display: inline-block;
+}
+.submit{
+  display: inline-flex;
+}
+#poster{
+  display: none;
+}
+
+@media print {
+
 }

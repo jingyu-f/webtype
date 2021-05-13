@@ -276,12 +276,13 @@ button:hover{
   display: none;
 }
 .time{
-  color: #e0013f;
+  color: white;
+  font-size: 19pt;
   text-align: left;
   position: absolute;
   z-index: 10;
-  left: 50%;
-  border: 2px solid black;
+  left: 40%;
+  top: 500pt;
   padding: 1em;
 	margin-top: 0rem;
 

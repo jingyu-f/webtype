@@ -60,7 +60,7 @@ html, body { background-color: #f6f7eb; height:100%; margin:0; padding:0;}
 #small_shape0:hover{
   font-variation-settings: 'wght' 350;
   -webkit-transform: rotate(360deg) translateZ(0);
-  color: grey;
+  color: black;
   font-size: 200px;
 }
 

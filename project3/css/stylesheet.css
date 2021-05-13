@@ -338,7 +338,7 @@ body{
   font-family:'RECURSIVE', monospace;
   font-size: 160px;
   text-align: center;
-  padding-top: 130px;
+  padding-top: 260px;
   animation: theme_color 48000ms infinite forwards;
   --casl: 0.4;
 }

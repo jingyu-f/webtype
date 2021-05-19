@@ -7,6 +7,13 @@
   <script   src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous"></script>
   <script src="https://unpkg.com/konva@7.2.5/konva.min.js"></script>
   <script src="script.js"></script>
+  <style>html, body{
+    background-color: #f6f7eb;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+  }</style>
   <title>Jingyu's Site</title>
   <!-- this is where my meta-info lives, but won’t show up on the page itself-->
 </head>
@@ -35,7 +42,14 @@
     <div id="small_shape11">o</div>
   </section>
 
-  <section class="sliders">
+
+  <section class="field">
+    <div class="text-field">
+      <label for="plain">Some Words to Describe My Day: </label>
+      <input type="text" id="plain" name="plain" placeholder="">
+    </div>
+
+
     <div class="range-name">Which mood am I?</div>
     <span class="min">chill</span>
     <input data-type="wght" class="range axis-range menu" type="range" min="100" max="500" value="100">
@@ -54,12 +68,7 @@
     <br>
     <div class="range-name">Color to depict my day</div>
     <input data-type="hue" class="range axis-range menu" type="range" min="0" max="360" >
-  </section>
-  <section class="field">
-    <div class="text-field">
-      <label for="plain">Some Words to Describe My Day: </label>
-      <input type="text" id="plain" name="plain" placeholder="">
-    </div>
+    <br>
     <button class="submit" id="submit">Submit</button>
   </section>
 </div>

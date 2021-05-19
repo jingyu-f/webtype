@@ -28,7 +28,7 @@
   font-variation-settings: 'CASL' var(--casl);
 }
 
-html, body { background-color: #f6f7eb; height:100%; margin:0; padding:0;}
+
 
 #roof{
   position: absolute;
@@ -40,13 +40,6 @@ html, body { background-color: #f6f7eb; height:100%; margin:0; padding:0;}
 #sliders li{
 	display: inline-flex;
 	justify-content: center;
-}
-.range-name::after{
-	content: ': ';
-}
-input.axis-range{
-	width: 550px;
-	margin: 0 20px;
 }
 
 
@@ -379,7 +372,7 @@ button:hover{
   font-family:'RECURSIVE', monospace;
   font-size: 22px;
   text-align: left;
-  position: fixed;
+  position: relative;
   line-height: 25pt;
   bottom: 0px;
   left: 0px;
@@ -394,20 +387,27 @@ button:hover{
   font-size: 27px;
   text-align: left;
   left: 600pt;
-  position: relative;
+  position: absolute;
 }
+
+.range-name::after{
+	content: ': ';
+}
+input.axis-range{
+	width: 300px;
+	margin: 0 20px;
+}
+
 .submit{
   font-family:'RECURSIVE', monospace;
   font-size: 22px;
   background-color: white;
   position: relative;
-
+  display: inline-flex;
 }
 .range-name{
   display: inline-block;
-}
-.submit{
-  display: inline-flex;
+  width: 300px;
 }
 
 #poster{

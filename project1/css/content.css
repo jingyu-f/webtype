@@ -147,6 +147,7 @@ h4{
 }
 
 
+
 body{
   overflow-x:hidden;
   width:100%;
@@ -168,7 +169,7 @@ svg{
   stroke-width:1.2px;
   stroke-linecap: round;
   fill: none;
-  display: block;
+  display: none;
 
 }
 
@@ -489,25 +490,29 @@ transform: translateX(20%);
   padding-top: 100px;
   padding-left: 50px;
   overflow: scroll;
+  font-variant-numeric: oldstyle-nums;
 }
 .article2{
   width: 600px;
   padding-top: 100px;
   padding-left: 50px;
   overflow: scroll;
+  font-variant-numeric: oldstyle-nums;
 }
 .article3{
   width: 600px;
   padding-top: 100px;
   margin-left: 60pt;
   overflow: scroll;
+  font-variant-numeric: oldstyle-nums;
 }
 
-a.link{
-  #0C354D;
-}
-a.visited{
+
+a:link, a:visited{
   color:#0C354D;
+}
+a:hover {
+    color: #0C354D;
 }
 
 

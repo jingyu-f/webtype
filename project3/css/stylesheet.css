@@ -452,7 +452,7 @@ input.axis-range{
 #rectangle{
   width: 100%;
   height: 170px;
-  background-image: linear-gradient(to bottom,rgba(201,197,151,1) ,rgba(201,197,151,0));
+  background-image: linear-gradient(to bottom,rgba(201,197,151,0.75) ,rgba(201,197,151,0));
   z-index: 20;
   display:block;
   position: fixed;

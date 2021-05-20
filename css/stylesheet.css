@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'cirkaregular';
+    src: url('../project1/fonts/Cirka-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html, body{
+  background-color: #3892f4;
+}
+h1, h3, a, h2{
+  font-family: 'cirkaregular';
+  margin-left: 50px;
+  text-align: left;
+  color: white;
+}
+h1{
+  font-size: 60pt;
+}
+h2{
+  font-size: 27pt;
+}
+h3{
+  font-size: 30pt;
+}
+a{
+  font-size: 18pt;
+}
+a:link, a:visited{
+  color:white;
+}
+a:hover {
+    color: pink;
+}
+.name{
+  position: absolute;
+  right: 50px;
+  color: pink;
+}

@@ -94,8 +94,8 @@ h2{
 , .highlight_min, .highlight_la, .highlight_sj, .highlight_long, .highlight_cs, .highlight_ja, .highlight_sa, .highlight_oakland, .highlight_honolulu, .highlight_lexington
 , .highlight_cin, .highlight_newark, .highlight_orlando, .highlight_mem, .highlight_riverside, .highlight_pit, .highlight_ir, .highlight_au{
    margin: 0;
-  font-size: 1.5vw;
-  line-height: 2.2;
+  font-size: 1.7vw;
+  line-height: 2;
   padding-top: 16px;
   padding-bottom:16px;
 text-align: center;
@@ -133,7 +133,7 @@ display: inline-block;
 #main{
 
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto;
   background-color: white;
   padding: 0;
     padding-top: 15px;
